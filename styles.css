@@ -8,32 +8,30 @@
 body {
     position: relative;
     width: 100%;
+    /* height: 100vh; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     background-color: #395B64;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    /* justify-content: center; */
+    width: 90%;
+    margin: 10px 0;
     align-items: center;
     padding: 3rem 2rem;
     background-color: #2C3333;
     color: white;
     border-radius: 20px;
-    /* height: 600px; */
     box-shadow: 0 0 10px #2C3333;
-    position: relative;
 }
 
 .searchBox {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -52,7 +50,10 @@ body {
     outline: none;
 
 }
-
+.buttonDiv {
+    position: relative;
+    margin-left: 20px;
+}
 .searchBox button {
     margin: 0;
     padding: 10px 20px;
@@ -86,9 +87,35 @@ body {
     object-fit: cover;
 }
 
-.powerStatsDiv {
-    display: flex;
-    flex-direction: column;
+#powerStatDiv {
+
     font-size: 1.2rem;
     line-height: 50px;
+}
+
+.footer{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 605px) {
+    .searchBox {
+        flex-direction: column;
+    }
+
+    .searchBox input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .buttonDiv {
+        /* width: 100%; */
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .buttonDiv button{
+        margin-right:10px;
+    }
 }

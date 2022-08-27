@@ -14,9 +14,11 @@
   <body>
     <div class="box">
       <div class="searchBox">
-        <input type="search" id="userInput" placeholder="Enter the Name"/>
-        <button onclick="findHero()">Search</button>
-        <button onclick="randomHero()">Random Hero</button>
+        <input type="search" id="userInput" placeholder="Enter the Name" />
+        <div class="buttonDiv">
+          <button onclick="findHero()">Search</button>
+          <button onclick="randomHero()">Random</button>
+        </div>
       </div>
       <div id="supName">
         <h1></h1>
@@ -24,15 +26,11 @@
       <div id="supImage">
         <img src="" alt="" />
       </div>
-      <div class="powerStatsDiv">
-        <p class="powerStat"></p>
-        <p class="powerStat"></p>
-        <p class="powerStat"></p>
-        <p class="powerStat"></p>
-        <p class="powerStat"></p>
-        <p class="powerStat"></p>
+      <div id="powerStatDiv">
+        <!-- here come stats -->
       </div>
     </div>
+    <p class="footer">Copyright @ Harsh Prajapati</p>
     <script src="main.js"></script>
   </body>
 </html>
